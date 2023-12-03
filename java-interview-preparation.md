@@ -20,4 +20,62 @@
 19) When dead lock will occur?
 20) How to achieve parallel threading?
 21) What is join, sleep, and yeild?
-22) What is ExecutorService and it's type?
+<details>
+<summary>Answer</summary>
+
+**Join** used for wait one thread until finish another thread. In below example t2 is waiting for t1 until it's complete.<br>
+**Sleep** used for just pause current thread until time ends and it's not bother another thread.<br>
+**Yeild** It's denoting current thread isn't important and run if any thread equal or higher priority with runnable state than current thread, otherwise continue current thread. <br>
+  
+  ```
+   import java.util.*;
+
+    public class Practice {
+        public static void main(String[] args) throws Exception {
+            // Parallel threading
+            //Thread 1
+            Thread t1 = new Thread() {
+                public void run(){
+                    for(int i=0;i<5;i++){
+                            try{
+                                System.out.println(Thread.currentThread().getName() + "->" + i);
+                                // Every iteration t1 thread alone get into sleep mode where as t2 thread will execute immediately
+                                Thread.sleep(100);
+                            } catch(InterruptedException e){
+                                e.printStackTrace();
+                            }
+                    }
+                }
+            };
+            t1.start();
+            // t2 will wait until t1 completes
+            t1.join();
+           
+            //Thread 2
+            Thread t2 = new Thread() {
+                public void run(){
+                    for(int i=0;i<5;i++){
+                        System.out.println(Thread.currentThread().getName() + "->" + i);
+                    }
+                }
+            };
+            t2.start();
+        }
+    }
+
+  ```
+  **Output**
+  ```
+  Thread-0->0
+  Thread-0->1
+  Thread-0->2
+  Thread-0->3
+  Thread-0->4
+  Thread-1->0
+  Thread-1->1
+  Thread-1->2
+  Thread-1->3
+  Thread-1->4
+  ```
+</details>
+23) What is ExecutorService and it's type?
