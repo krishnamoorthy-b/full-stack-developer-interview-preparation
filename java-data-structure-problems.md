@@ -30,3 +30,27 @@ class HelloWorld {
 }
 ```
    
+### 2) Find missing number between 1 - 100
+
+```
+import java.util.BitSet;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int numbers[] = {1,2,3,5};
+        int missingCount = 1;
+        
+        BitSet bitSet = new BitSet(5);
+        
+        for(int number : numbers) {
+            bitSet.set(number -1);
+        }
+        
+        int lastMissingIndex = 0;
+        for(int i=0; i < missingCount; i++){
+            lastMissingIndex = bitSet.nextClearBit(lastMissingIndex);
+            System.out.print(++lastMissingIndex);
+        }
+    }
+}
+```
