@@ -20,6 +20,28 @@
 </details>
 
 2) Static vs Instance block
+<details>
+  <summary>Answer</summary></br>
+  <table>
+    <thead>
+      <tr>
+        <th>Static Block</th>
+        <th>Instance Block</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>It will be getting invoked once when class load</td>
+        <td>It will be getting invoked each time when create instance of class</td>
+      </tr>
+      <tr>
+        <td>Used for initialize static variable and invoke static methods</td>
+        <td>Used for initialize instance variable and instance methods</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
+
 3) Which object is eligible for garbage collection?
 4) How to mannually trigger garbage collection?
 5) Final vs Finally vs Finalize
