@@ -1,5 +1,24 @@
 # java interview questions
 1) Can print before invoke main method?
+<details>
+  <summary>Answer</summary></br>
+  Using static block we can print before main and it will be invoked only once when class getting load.</br>
+  
+  ```
+    class HelloWorld {
+      static{
+          System.out.print("hi ");
+      }
+      public static void main(String[] args) {
+          System.out.print("krishna");
+      }
+    }
+  ```
+  
+  **Output**
+  hi krishna
+</details>
+
 2) Static vs Instance block
 3) Which object is eligible for garbage collection?
 4) How to mannually trigger garbage collection?
