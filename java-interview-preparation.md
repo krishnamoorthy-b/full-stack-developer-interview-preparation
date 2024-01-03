@@ -55,12 +55,13 @@
 13) Fail safe vs Fail fast
 14) Comparator vs Comparable
 15) Consumer vs Producer
-16) How to create thread?
-17) What and all ways stop main thread?
-18) What is cuncurrent modification exception?
-19) When dead lock will occur?
-20) How to achieve parallel threading?
-21) What is join, sleep, and yeild?
+16) Diamond problem in java?
+17) How to create thread?
+18) What and all ways stop main thread?
+19) What is cuncurrent modification exception?
+20) When dead lock will occur?
+21) How to achieve parallel threading?
+22) What is join, sleep, and yeild?
 <details>
 <summary>Answer</summary>
 
