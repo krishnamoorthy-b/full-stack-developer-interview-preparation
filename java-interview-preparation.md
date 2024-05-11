@@ -43,6 +43,17 @@
 </details>
 
 3) Which object is eligible for garbage collection?
+
+<details>
+<summary>Answer</summary></br>
+<ul>
+  <li>Reasigning Reference variable</li>
+  <li>Nullifying Reference variable</li>
+  <li>Ananymous object</li>
+  <li>Create Object inside a method</li>
+</ul>
+</details>
+
 4) How to mannually trigger garbage collection?
 5) Final vs Finally vs Finalize
 6) Exception vs Error
