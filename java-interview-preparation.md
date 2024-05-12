@@ -55,6 +55,12 @@
 </details>
 
 4) How to mannually trigger garbage collection?
+
+<details>
+<summary>Answer</summary></br>
+System.gc()
+</details>
+
 5) Final vs Finally vs Finalize
 6) Exception vs Error
 7) Checked vs UnChecked exception
