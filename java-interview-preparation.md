@@ -62,6 +62,27 @@ System.gc()
 </details>
 
 5) Final vs Finally vs Finalize
+
+<details>
+  <summary>Answer</summary></br>
+  <table>
+    <thead>
+      <tr>
+        <th>Final</th>
+        <th>Finally</th>
+        <th>Finalize</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>It's a constant. We can use this for variable, method and class.</td>
+        <td>It's a block and used for try catch use case. This block will be called always.</td>
+        <td>It's a method and it will called when before objected is garbage collected.</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
+
 6) Exception vs Error
 7) Checked vs UnChecked exception
 8) What is try with resource?
