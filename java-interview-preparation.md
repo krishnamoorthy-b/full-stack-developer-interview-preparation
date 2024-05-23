@@ -84,7 +84,53 @@ System.gc()
 </details>
 
 6) Exception vs Error
+
+<details>
+  <summary>Answer</summary></br>
+  <table>
+    <thead>
+      <tr>
+        <th>Error</th>
+        <th>Exception</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>It's occurs due to the lack of system resources.</td>
+        <td>It's occurs in compile or run time.</td>
+      </tr>
+      <tr>
+        <td>Ex: OutOfMemoryError, StackOverflowError, etc.</td>
+        <td>Ex: Null Pointer Exception(Run time), SQL Exception(Compile time), etc.</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
+
 7) Checked vs UnChecked exception
+
+<details>
+  <summary>Answer</summary></br>
+  <table>
+    <thead>
+      <tr>
+        <th>Checked Exception</th>
+        <th>UnChecked Exception</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>It's force to handle exception.</td>
+        <td>It's not force to handle exception.</td>
+      </tr>
+      <tr>
+        <td>Ex: SQL Exception, etc.</td>
+        <td>Ex: Arithmatic Exception, etc.</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
+
 8) What is try with resource?
 9) throw vs throws
 10) ArrayList vs LinkedList
