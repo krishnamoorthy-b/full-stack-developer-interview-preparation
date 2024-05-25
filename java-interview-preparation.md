@@ -135,7 +135,58 @@ System.gc()
 9) throw vs throws
 10) ArrayList vs LinkedList
 11) What is HashTable?
+
+<details>
+  <summary>Answer</summary></br>
+  It's storing data as key pair value and it's syncronized. It won't allow any null key or values.<br>
+  <b>Time complexity</b><br>
+  Serach: O(1)<br>
+  Insertion: O(1)<br>
+  Deletion: O(1)<br>
+</details>
+
 12) HashMap vs HashSet
+
+<details>
+  <summary>Answer</summary></br>
+  <table>
+    <thead>
+      <tr>
+        <th>HashMap</th>
+        <th>HashSet</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>It's storing data as key pair value and doesn't allow duplicate key but allow duplicate value.</td>
+        <td>It's storing data as object and doesn't allow duplicate value.</td>
+      </tr>
+      <tr>
+        <td>It's internally use <b>Array and LinkedList</b> data structure. Array is used to store key pair value and LinkedList is used to store values alone when key is getting duplicate.</td>
+        <td>It's internally use HashMap to store elements.</td>
+      </tr>
+      <tr>
+        <td>HashMap is faster than HashSet.</td>
+        <td>It's slower than HashMap.</td>
+      </tr>
+      <tr>
+        <td>
+          <b>Time complexity</b><br>
+          Serach: O(1)<br>
+          Insertion: O(1)<br>
+          Deletion: O(1)<br>
+        </td>
+        <td>
+          <b>Time complexity</b><br>
+          Serach: O(1)<br>
+          Insertion: O(1)<br>
+          Deletion: O(1)<br>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</details>
+
 13) Fail safe vs Fail fast
 14) Comparator vs Comparable
 15) Consumer vs Producer
