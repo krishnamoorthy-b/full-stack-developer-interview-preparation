@@ -1,20 +1,6 @@
 #### Java Problems
 
-### 1) Reverse string<br>
-  ```
-  class HelloWorld {
-      public static void main(String[] args) {
-          String name = "krishnamoorthy";
-          String reverseName = "";
-          for(int j=(name.length() - 1);j >= 0;j--){
-              reverseName += name.charAt(j);
-          }
-          System.out.println(reverseName);
-      }
-  }
-  ```
-
-### 2) Reverse Integer<br>
+### 1) Reverse Integer<br>
    Reverse integer and reverse Integer range would be 32 bit [-2^32 to 2^32 -1], If it's goes beyond that then return 0<br>
    i.e<br>
    input: 123<br>
@@ -38,4 +24,29 @@
         return (int) reverseNumber;
     }
   }
+```
+
+### 2) Find missing number between 1 - 100
+
+```
+import java.util.BitSet;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int numbers[] = {1,2,3,5};
+        int missingCount = 1;
+        
+        BitSet bitSet = new BitSet(5);
+        
+        for(int number : numbers) {
+            bitSet.set(number -1);
+        }
+        
+        int lastMissingIndex = 0;
+        for(int i=0; i < missingCount; i++){
+            lastMissingIndex = bitSet.nextClearBit(lastMissingIndex);
+            System.out.print(++lastMissingIndex);
+        }
+    }
+}
 ```
