@@ -77,7 +77,7 @@ System.gc()
       <tr>
         <td>It's a constant. We can use this for variable, method and class.</td>
         <td>It's a block and used for try catch use case. This block will be called always.</td>
-        <td>It's a method and it will called when before objected is garbage collected.</td>
+        <td>It's a method and it will invoked when before object is getting garbage collect.</td>
       </tr>
     </tbody>
   </table>
