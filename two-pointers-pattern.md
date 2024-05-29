@@ -1,25 +1,30 @@
 ## Two Pointers Pattern
-If use two cursors to solve any problem called two pointer patterns.
+Solve problems using two cursors.
 
 ### 1) Palindrome<br>
-Find palindrome of given string?
+Find palindrome of given string?<br>
 Ex<br>
 input: malayalam<br>
-output: malayalam is palindrome<br>
+output: Given string is palindrome<br>
 
- <b>Time Complexity: O log(n)</b>
+<b>Time Complexity: O(n)</b>
 
 ```
 class HelloWorld {
   public static void main(String[] args) {
       
       String name = "malayalam";
-      int lentgh = name.length() - 1; //8
-      int half = Math.round(name.length()/2);
+      
+      int length = name.length() - 1;
+      long half = Math.round(Double.parseDouble(name.length()+".0")/2);
       
       for(int i=0;i<half;i++){
-          //m != m
-          if(name.charAt(i) != name.charAt(lentgh - i)){
+          // Break if both pointers are same
+          if(i == (length - i)){
+            break;
+          }
+          
+          if(name.charAt(i) != name.charAt(length - i)){
               System.out.println("Given string is not palindrome");
               return;
           }
@@ -34,7 +39,7 @@ Ex<br>
 input: krishna<br>
 output: anhsirk<br>
 
- <b>Time Complexity: O(maxItr)</b>
+<b>Time Complexity: O(n)</b>
 
 ```
 class HelloWorld {
