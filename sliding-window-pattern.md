@@ -1,7 +1,7 @@
 
 ## Sliding Window Pattern
 
-### 1) Find max sum of array<br>
+### 1) Pair with given sum<br>
 Ex<br>
 input: arr[] = {1, 4, 2, 10, 23, 3, 1, 0, 20}, k = 4<br>
 output: 39<br>
