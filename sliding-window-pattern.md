@@ -5,8 +5,7 @@
 Ex<br>
 input: arr[] = {1, 4, 2, 10, 23, 3, 1, 0, 20}, k = 4<br>
 output: 39<br>
-
- <b>Time Complexity: O(maxItr)</b>
+<b>Time Complexity: O(n)</b>
 
 ```
 class HelloWorld {
