@@ -1,5 +1,5 @@
 ## Two Pointers Pattern
-Solve problems using two cursors.
+Solve the problems using two cursors by traversing through different direction in array.
 
 ### 1) Palindrome<br>
 Find palindrome of given string?<br>
