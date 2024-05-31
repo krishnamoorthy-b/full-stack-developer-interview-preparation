@@ -1,7 +1,7 @@
 
 ## Sliding Window Pattern
 
-### 1) Pair with given sum<br>
+### 1)Sum of pair<br>
 Ex<br>
 input: arr[] = {1, 4, 2, 10, 23, 3, 1, 0, 20}, k = 4<br>
 output: 39<br>
