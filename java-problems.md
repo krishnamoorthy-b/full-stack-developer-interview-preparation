@@ -50,3 +50,31 @@ class HelloWorld {
     }
 }
 ```
+
+### 3) Find sum of pair between any two numbers<br>
+   i.e<br>
+   input: [1,8,4,3]<br>
+   output: 7<br>
+   ```
+   import java.util.Map;
+   import java.util.HashMap;
+   
+   class HelloWorld {
+       public static void main(String[] args) {
+           int[] nums = {1,8,4,3};
+           int target = 7;
+           Map<Integer, Integer> numMap = new HashMap<>();
+           
+           for(int i=0; i < nums.length; i++){
+                   
+               int remaingVal = target - nums[i];
+               if(numMap.containsKey(remaingVal)) {
+                   System.out.print("Array Index -> {"+numMap.get(remaingVal)+","+i+"}");
+                   System.out.print("Array Value -> {"+remaingVal+","+nums[i]+"}");
+                   break;
+               }
+               numMap.put(nums[i], i);
+           }
+       }
+   }
+```
