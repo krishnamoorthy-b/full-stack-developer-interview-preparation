@@ -26,34 +26,30 @@
   }
 ```
 
-### 2) Find missing number between 1 - 100
-
+### 2) Find missing number
+   i.e<br>
+   input: arr=[1,2,4,5], n=5<br>
+   output: 3<br>
 ```
-import java.util.BitSet;
-
-class HelloWorld {
-    public static void main(String[] args) {
-        int numbers[] = {1,2,3,5};
-        int missingCount = 1;
-        
-        BitSet bitSet = new BitSet(5);
-        
-        for(int number : numbers) {
-            bitSet.set(number -1);
-        }
-        
-        int lastMissingIndex = 0;
-        for(int i=0; i < missingCount; i++){
-            lastMissingIndex = bitSet.nextClearBit(lastMissingIndex);
-            System.out.print(++lastMissingIndex);
-        }
-    }
-}
+   class HelloWorld {
+       public static void main(String[] args) {
+           
+           int arr[] = {1,2,4,5};
+           int n=5;
+           int sum = 0;
+           for(int i=0; i < arr.length; i++){
+               sum = sum + arr[i];
+           }
+           
+           int sumOfAllNum = (n * (n + 1)) / 2;
+           System.out.print("Missing number is -> "+(sumOfAllNum - sum));
+       }
+   }
 ```
 
 ### 3) Find sum of pair between any two numbers<br>
    i.e<br>
-   input: [1,8,4,3]<br>
+   input: arr=[1,8,4,3]<br>
    output: 7<br>
    ```
    import java.util.Map;
