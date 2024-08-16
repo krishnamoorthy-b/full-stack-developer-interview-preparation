@@ -74,3 +74,30 @@
        }
    }
 ```
+
+### 4)Find first 10 fibonacci series<br>
+   i.e<br>
+   output: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34<br>
+   ```
+      import java.util.List;
+      import java.util.ArrayList;
+      
+      class HelloWorld {
+          public static void main(String[] args) {
+              
+              List<Integer> fibonacciNum = new ArrayList<>();
+              fibonacciNum.add(0);
+              fibonacciNum.add(1);
+              int numCount = 8;
+              int i=2;
+              
+              while(numCount > 0){
+                  fibonacciNum.add(fibonacciNum.get(i-2) + fibonacciNum.get(i-1));
+                  i++;
+                  numCount--;
+              }
+              
+              fibonacciNum.forEach( num -> System.out.print(num + ", "));
+          }
+      }
+   ```
