@@ -76,7 +76,8 @@
 ```
 
 ### 4)Find first 10 fibonacci series<br>
-   i.e<br>
+   i.e <br>
+   1)Basic approach by sum of two preceding values in list. <br>
    output: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34<br>
    ```
       import java.util.List;
@@ -98,6 +99,36 @@
               }
               
               fibonacciNum.forEach( num -> System.out.print(num + ", "));
+          }
+      }
+   ```
+
+   2)Recursive approach by sum of two preceding values in list. <br>
+   output: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34<br>
+   ```
+      import java.util.List;
+      import java.util.ArrayList;
+
+      class HelloWorld {
+          public static void main(String[] args) {
+              
+              //fibonacci series with recursion
+              List<Integer> nums = new ArrayList<>();
+              nums.add(0);
+              nums.add(1);
+              int n=9;
+              int i=2;
+              
+              findPalindrome(i,n, nums);
+              nums.forEach( num -> System.out.print(num + ", "));
+          }
+          
+          public static void findPalindrome(int i, int n, List<Integer> nums){
+              if(!(i > n)) {
+                  nums.add((nums.get(i-2) + nums.get(i-1)));
+                  i += 1;
+                  findPalindrome(i, n, nums);
+              }
           }
       }
    ```
