@@ -60,3 +60,30 @@ class HelloWorld {
     }
 }
 ```
+
+### 3)Rotate Array<br>
+   i.e <br>
+   1)Rotate entire array<br>
+   input: arr=[1,2,3,4,5,6,7]<br>
+   output: arr=[7,6,5,4,3,2,1]<br>
+   ```
+      class HelloWorld {
+          public static void main(String[] args) {
+              //Rotate Array
+              int arr[] = {1,2,3,4,5,6,7};
+              int cursorA = 0;
+              int cursorB = arr.length-1;
+              while(cursorA < cursorB){
+                  int last = arr[cursorA];
+                  int first = arr[cursorB];
+                  arr[cursorA] = first;
+                  arr[cursorB] = last;
+                  cursorA++;
+                  cursorB--;
+              }
+              for(int i=0; i < arr.length;i++){
+                  System.out.print(arr[i]+",");
+              }
+          }
+      }
+   ```
