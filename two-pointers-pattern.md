@@ -87,3 +87,34 @@ class HelloWorld {
           }
       }
    ```
+   2)Rotate k of elements in the array to right side<br>
+   input: arr=[1,2,3,4,5,6,7], k=3<br>
+   output: arr=[5,6,7,1,2,3,4]<br>
+   ```
+      import java.util.List;
+      import java.util.ArrayList;
+
+      class HelloWorld {
+          public static void main(String[] args) {
+              int arr[] = {1,2,3,4,5,6,7};
+              int k=3;
+              List<Integer> nums = new ArrayList();
+              
+              for(int i=arr.length-1,j=0; i >= 0;i--){
+                  if(k > 0){
+                      int key=((arr.length) - k);
+                      nums.add(arr[key]);
+                      k--;
+                  } else {
+                      nums.add(arr[j]);
+                      j++;
+                  }
+              }
+              
+              for(int index=0; index < nums.size(); index++){
+                  arr[index]=nums.get(index);
+                  System.out.print(nums.get(index)+",");
+              }
+          }
+      }
+   ```
