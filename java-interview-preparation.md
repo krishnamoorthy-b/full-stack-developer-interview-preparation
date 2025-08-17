@@ -1,4 +1,23 @@
 # java interview questions
+
+1) SOLID Principles
+<details>
+  <summary>Answer</summary></br>
+  S -> Single Responsiblity</br>
+  A class should have only for single reason. For example, Student class should have only for student releated information instead of teachers too.</br></br>
+  O -> Open/Closed Principle</br>
+  Classes should be open for extension but closed for modification.</br></br>
+  L -> Liskov Substitution Principle</br>
+  Subclasses should be substitutable for their parent classes without breaking functionality.</br></br>
+  I-> Interface Segregation Principle<br>
+  Don’t force a class to implement unnecessary methods. Better to have small, specific interfaces.</br></br>
+  D -> Dependency Inversion Principle<br>
+  Depend on abstractions, not implementations.</br></br>
+  Reference with eample -> https://chatgpt.com/share/68a1f9de-c588-8003-8742-3e1006047fa0
+  
+  
+</details>
+
 1) Can print before invoke main method?
 <details>
   <summary>Answer</summary></br>
